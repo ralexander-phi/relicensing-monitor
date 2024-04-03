@@ -1,0 +1,16 @@
+{
+  "licenses": [
+    {
+      "name": "Redis Source Available License 2.0",
+      "licenseId": "__RSALv2",
+      "isOsiApproved": false,
+      "reference": "https://github.com/redis/redis/blob/unstable/LICENSE.txt"
+    },
+    {
+      "name": "Elastic License 2.0",
+      "licenseId": "__ELASTIC-2.0",
+      "isOsiApproved": false,
+      "reference": "https://www.elastic.co/licensing/elastic-license"
+    }
+  ]
+}

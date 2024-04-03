@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{- partial "head" . }}
+  </head>
+  <body>
+  {{- partial "nav" . }}
+  <div style="max-width: 75em; margin: auto;">
+  {{- block "main" . }}
+  {{- end }}
+  </div>
+  {{- partial "footer" . }}
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="section">
+  <main>
+    <article class="is-size-5">
+      <section class="section hero is-small">
+        <div class="hero-body">
+          <h1 class="title is-2">Always Open</h1>
+
+          <p class="block">
+          This project tracks various attributes of open source projects to surface risks that they could switch to a non-open source license.
+          </p>
+
+          <p class="block">
+          <div class="buttons">
+            <a href="/project/" class="button is-primary">View Projects</a>
+            <a href="/factor/" class="button is-light is-danger is-outlined">View Risk Factors</a>
+          </div>
+          </p>
+
+          <p class="block">
+          An open source software "rug-pull" occurs when a project changes it's license to something non-open source.
+          This is often done so that the project trademark owner can monetize the project.
+          Developer communities that provided their work to the project are often upset when this happens and may stop collaborating with the project.
+          License changes do not apply retroactively to previous releases, so developers may consider forking the project under a new name and with an open source license.
+          </p>
+
+          <p class="block">
+          Examples of the rug-pull problem include <a href="/project/redis/">Redis</a> and <a href="/project/terraform/">Terraform</a>.
+          </p>
+
+          <p class="block">
+          This site seeks to educate developers and users about risks that their favorite open source projects may be relicensed unfavorably.
+          </p>
+        </div>
+      </section>
+
+    </article>
+  </main>
+</section>
+{{ end }}

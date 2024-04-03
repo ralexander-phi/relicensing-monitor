@@ -1,0 +1,17 @@
+{{- $licenseColor := "" -}}
+{{- $licenseBlurb := "" -}}
+{{- if eq .type "opensource" -}}
+  {{- $licenseColor = "is-secondary" -}}
+  {{- $licenseBlurb = "Permissive Open Source" -}}
+{{- else if eq .type "copyleft" -}}
+  {{- $licenseColor = "is-success" -}}
+  {{- $licenseBlurb = "Copyleft Open Source" -}}
+{{- end -}}
+
+<p class="block">
+	&#8227;
+  &nbsp;
+  <a href="{{ .ref }}" class="is-size-5">{{ .name }}</a>
+  &nbsp;
+  <span class="tag {{ $licenseColor }}">{{ $licenseBlurb }}</span>
+</p>
