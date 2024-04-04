@@ -18,8 +18,8 @@ See CONTRIBUTING.md to get started.
 Copyright (c) 2024 Various Contributors
 
 This project is dual-licensed under:
-* MIT: See LICENSE-MIT.txt (or [tl;rdLegal](https://www.tldrlegal.com/license/mit-license)
-* CC-BY-4.0: See LICENSE-CC.txt (or [tl;rdLegal](https://www.tldrlegal.com/license/creative-commons-attribution-4-0-international-cc-by-4)
+* MIT: See LICENSE-MIT.txt (or [tl;rdLegal](https://www.tldrlegal.com/license/mit-license))
+* CC-BY-4.0: See LICENSE-CC.txt (or [tl;rdLegal](https://www.tldrlegal.com/license/creative-commons-attribution-4-0-international-cc-by-4))
 
 You may use this project under either license at your own choice.
 

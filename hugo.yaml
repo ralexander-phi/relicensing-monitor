@@ -1,6 +1,7 @@
 baseURL:
 languageCode: en-us
 title: Always Open
+canonifyURLs: true
 
 params:
   repoUrl: https://codeberg.org/robalexdev/alwaysopen
