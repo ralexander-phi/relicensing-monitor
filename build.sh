@@ -8,4 +8,4 @@ git switch --orphan pages
 git add public/
 git mv ./public/* ./
 
-echo "Try `git commit -m "message"` and `git push --set-upstream origin pages --force now`"
+echo "Try git commit -m "message" and git push --set-upstream origin pages --force"
