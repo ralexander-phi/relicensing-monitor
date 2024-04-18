@@ -8,6 +8,16 @@
   {{- $description = "Contributors sign a developer certificate of origin, but are not required to grant futher rights." -}}
   {{- $risk = "Low" -}}
   {{- $show = true -}}
+{{- else if eq "Informal" .Params.agreements.type -}}
+  {{- $tag = "is-info" -}}
+  {{- $description = "Contributors make only informal agreements when contributing code, but are not required to grant further rights." -}}
+  {{- $risk = "Medium" -}}
+  {{- $show = true -}}
+{{- else if eq "Unclear" .Params.agreements.type -}}
+  {{- $tag = "is-info" -}}
+  {{- $description = "Contribution requirements do not appear to be formally specified." -}}
+  {{- $risk = "Medium" -}}
+  {{- $show = true -}}
 {{- else if eq "CLA" .Params.agreements.type -}}
   {{- $tag = "is-info" -}}
   {{- $description = "Contributors are required to sign a license agreement." -}}

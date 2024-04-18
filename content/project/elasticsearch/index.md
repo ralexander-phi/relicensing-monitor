@@ -28,7 +28,7 @@ pledge:
 
 forks:
   - name: OpenSearch
-    ref: https://github.com/opensearch-project/OpenSearch
+    ref: /project/opensearch/
     type: opensource
 
 ---

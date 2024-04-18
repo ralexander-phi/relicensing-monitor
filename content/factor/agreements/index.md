@@ -22,3 +22,10 @@ A Contributor License Agreement (CLA) is an agreement that contributors are requ
 A CLA is not inherently a problem, but some agreements require copyright grants and patent grants.
 Centralization of rights to the project owner simplifies the license change process as contributors have delegated their rights.
 
+
+## Informal or Non-existent Agreements
+
+Smaller projects may accept contributions without formal agreement or sign-off from contributors.
+Lack of licensing clarity can pose problems as contributors may not be the author, may not have rights to, or may not intend to license the code they have provided.
+Should the author of a contribution later claim that their work is being used without proper license the project would need to drop the problematic contributions or seek legal support to decide how to proceed.
+

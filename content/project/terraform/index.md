@@ -25,7 +25,7 @@ pledge:
 
 forks:
   - name: OpenTofu
-    ref: https://github.com/opentofu
+    ref: /project/opentofu/
     type: opensource
 ---
 On 10 August 2023, Terraform [changed](https://www.hashicorp.com/blog/hashicorp-adopts-business-source-license) from the open source MPL 2.0 License to the Business Source License (not open source).

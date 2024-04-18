@@ -20,4 +20,3 @@ pledge:
     known: true
     ref: /pledge/
 ---
-None yet.

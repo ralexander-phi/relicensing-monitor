@@ -18,4 +18,3 @@ agreements:
 pledge:
     known: false
 ---
-None yet.
