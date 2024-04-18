@@ -1,7 +1,18 @@
-baseURL:
+baseURL: https://robalexdev.codeberg.page/alwaysopen/
 languageCode: en-us
 title: Always Open
 canonifyURLs: true
 
 params:
   repoUrl: https://codeberg.org/robalexdev/alwaysopen
+
+outputs:
+  page:
+    - html
+    - svg
+
+outputFormats:
+  html:
+    mediaType: text/html
+  svg:
+    mediaType: image/svg+xml

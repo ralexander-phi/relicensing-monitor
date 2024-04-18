@@ -1,0 +1,30 @@
+{{- $agreements := (partial "agreement-risk" .) -}}
+{{- $licenses   := (partial "license-risk" .) -}}
+
+{{- $risks := slice $agreements.risk $licenses.risk -}}
+{{- $overallRisk := "" -}}
+{{- $tag := "" -}}
+{{- if .Params.rugpulled -}}
+  {{- $overallRisk = "High" -}}
+  {{- $tag = "is-danger" -}}
+{{- else if in $risks "High" -}}
+  {{- $overallRisk = "High" -}}
+  {{- $tag = "is-danger" -}}
+{{- else if in $risks "Medium" -}}
+  {{- $overallRisk = "Medium" -}}
+  {{- $tag = "is-info" -}}
+{{- else -}}
+  {{- $overallRisk = "Low" -}}
+  {{- $tag = "is-success" -}}
+{{- end -}}
+
+{{- return dict
+      "ctx" .
+      "agreements" $agreements
+      "licenses" $licenses
+      "risk"  $overallRisk
+      "tag"   $tag
+      "overall" (dict
+        "risk"  $overallRisk
+        "tag"   $tag
+) -}}

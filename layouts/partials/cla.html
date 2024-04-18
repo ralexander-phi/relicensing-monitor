@@ -1,41 +1,4 @@
-{{- $claTag := "" -}}
-{{- $claTagName:= "" -}}
-{{- $claDesc := "" -}}
-{{- $claRisk := "" -}}
-{{- $showCLASection := false -}}
-{{- $grants := slice -}}
-{{- if eq "DCO" .Params.agreements.type -}}
-  {{- $claTag = "is-success" -}}
-  {{- $claTagName = "Developer Certificate of Origin" -}}
-  {{- $claDesc = "Contributors sign a developer certificate of origin, but are not required to grant futher rights." -}}
-  {{- $claRisk = "Low" -}}
-  {{- $showCLASection = true -}}
-{{- else if eq "CLA" .Params.agreements.type -}}
-  {{- $claTag = "is-info" -}}
-  {{- $claTagName = "Contributor License Agreement" -}}
-  {{- $claDesc = "Contributors are required to sign a license agreement." -}}
-  {{- $claRisk = "Medium" -}}
-
-  {{- if .Params.agreements.grants.copyright -}}
-    {{- $claTag = "is-danger" -}}
-    {{- $claTagName = "Copyright Grant" -}}
-    {{- $claRisk = "High" -}}
-    {{- $grants = append "a copyright grant" $grants -}}
-  {{- end -}}
-
-  {{- if .Params.agreements.grants.patent -}}
-    {{- $claTag = "is-danger" -}}
-    {{- $claRisk = "High" -}}
-    {{- $grants = append "a patent grant" $grants -}}
-  {{- end -}}
-
-  {{- if $grants -}}
-    {{- $claDesc = (print "Contributors are required to sign a license agreement which grants " .Params.agreements.grantee " " (delimit $grants ", " " and ") ".") -}}
-  {{- end -}}
-  {{- $showCLASection = true -}}
-{{- end -}}
-
-{{- if $showCLASection -}}
+{{- if .agreements.show -}}
 <section class="section is-small pl-0">
 <h2 class="title is-3 mb-1">Contribution Requirements</h2>
 
@@ -43,17 +6,17 @@
   <div class="control">
     <a class="tags has-addons" href="/factor/agreements/">
       <span class="tag is-info is-light">Risk</span>
-      <span class="tag {{ $claTag }}">{{ $claRisk }}</span>
+      <span class="tag {{ .agreements.tag }}">{{ .agreements.risk}}</span>
     </a>
   </div>
 </div>
 
 <p class="block">
-  {{ $claDesc }}
+  {{ .agreements.description }}
 </p>
 
 <p class="block">
-  <a href="{{ .Params.agreements.ref}}">Reference</a>
+  <a href="{{ .ctx.Params.agreements.ref}}">Reference</a>
   &#124;
   <a href="/factor/agreements/">Learn more</a>
 </p>

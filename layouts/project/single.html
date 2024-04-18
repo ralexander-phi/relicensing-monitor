@@ -2,11 +2,14 @@
 
 <section class="section">
   {{- partial "project-info" . -}}
-  {{- partial "result" . -}}
-  {{- partial "license" . -}}
-  {{- partial "cla" . -}}
-  {{- partial "pledge" . -}}
-  {{- partial "notes" . -}}
+  {{- partial "rugpull" . -}}
+  {{- $ctx := partial "result" . -}}
+
+  {{- partial "license" $ctx -}}
+  {{- partial "cla"     $ctx -}}
+  {{- partial "pledge"  .    -}}
+  {{- partial "notes"   .    -}}
+  {{- partial "badge"   .    -}}
 </section>
 
 {{- end -}}

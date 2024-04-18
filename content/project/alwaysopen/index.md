@@ -3,18 +3,18 @@ title: Always Open
 summary: Tracking open source projects (this website)
 rugpulled: false
 
-website: https://example.com/TODO
+website: https://robalexdev.codeberg.page/alwaysopen/
 code: https://codeberg.org/robalexdev/alwaysopen
 
 license:
     spdx:
       - MIT
       - CC-BY-4.0
-    ref: https://example.com/TODO
+    ref: https://codeberg.org/robalexdev/alwaysopen/src/branch/main/README.md#license
 
 agreements:
     type: DCO
-    ref: https://example.com/TODO
+    ref: https://codeberg.org/robalexdev/alwaysopen/src/branch/main/CONTRIBUTING.md#dco-sign-off
 
 pledge:
     known: true

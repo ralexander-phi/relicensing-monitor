@@ -1,0 +1,95 @@
+{{- /*
+    Using OSI definitions for Open Source: https://opensource.org/licenses
+    Use SPDX IDs for licenses
+*/ -}}
+
+{{- $spdxSlice := slice -}}
+{{- $path := "data/spdx.json" -}}
+{{- with resources.Get $path -}}
+  {{- with unmarshal .Content -}}
+    {{- $spdxSlice = .licenses -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "Unable to get global resource %q" $path -}}
+{{- end -}}
+
+{{- $path = "data/spdx-extended.json" -}}
+{{- with resources.Get $path -}}
+  {{- with unmarshal .Content -}}
+    {{- /* Update with some extra licenses */ -}}
+    {{- $spdxSlice = append .licenses $spdxSlice -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "Unable to get global resource %q" $path -}}
+{{- end -}}
+
+{{- /* TODO: audit the list for the "share-alike" licenses */ -}}
+{{- $viralSet := slice
+  "GPL-2.0"
+  "LGPL-3.0"
+-}}
+
+{{- $licenseData := slice -}}
+{{- $anyOSIApproved := false -}}
+{{- $allViralOSS := true -}}
+{{- range $licenseSpdx := .Params.license.spdx -}}
+  {{- $found := false -}}
+  {{- range where $spdxSlice "licenseId" . -}}
+    {{- $found = true -}}
+    {{- $data := dict "name" .name "ref" .reference "isOsiApproved" .isOsiApproved -}}
+    {{- $isCreativeCommons := hasPrefix $licenseSpdx "CC-" -}}
+
+    {{- /* Excludes non-OSI approved, like CC SA */ -}}
+    {{- $viral := in $viralSet .licenseId -}}
+
+    {{- $data = merge $data (dict
+      "viral" $viral
+      "isCreativeCommons" $isCreativeCommons
+    ) -}}
+    {{- if .isOsiApproved -}}
+      {{- $anyOSIApproved = true -}}
+      {{- if $viral -}}
+        {{- $data = merge $data (dict "licenseColor" "is-success" "licenseBlurb" "Copyleft") -}}
+      {{- else -}}
+        {{- $data = merge $data (dict "licenseColor" "is-info" "licenseBlurb" "Permissive Open Source") -}}
+        {{- $allViralOSS = false -}}
+      {{- end -}}
+    {{- else if $isCreativeCommons -}}
+      {{- $data = merge $data (dict "licenseColor" "is-info" "licenseBlurb" "Creative Commons") -}}
+      {{- $allViralOSS = false -}}
+    {{- else -}}
+      {{- $data = merge $data (dict "licenseColor" "is-danger" "licenseBlurb" "Not Open Source") -}}
+      {{- $allViralOSS = false -}}
+    {{- end -}}
+    {{- $licenseData = $licenseData | append $data -}}
+  {{- end -}}
+  {{- if not $found -}}
+    {{- errorf "Unable to find license %q" . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $licenseSummary:= "" -}}
+{{- $licenseRisk := "" -}}
+{{- $licenseColor := "" -}}
+{{ if $anyOSIApproved }}
+  {{ if $allViralOSS }}
+    {{- $licenseSummary = "an open source and copyleft" -}}
+    {{- $licenseRisk = "Low" -}}
+    {{- $licenseColor = "is-success" -}}
+  {{ else }}
+    {{- $licenseSummary = "an open source" -}}
+    {{- $licenseRisk = "Medium" -}}
+    {{- $licenseColor = "is-info" -}}
+  {{ end }}
+{{ else }}
+  {{- $licenseSummary = "no longer an open source" -}}
+  {{- $licenseRisk = "High" -}}
+  {{- $licenseColor = "is-danger" -}}
+{{ end }}
+
+{{ return dict
+    "summary"        $licenseSummary
+    "risk"           $licenseRisk
+    "color"          $licenseColor
+    "data"           $licenseData
+}}

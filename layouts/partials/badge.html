@@ -1,0 +1,31 @@
+<section class="section is-small pl-0">
+  <h2 class="title is-3">Always Open Badge</h2>
+  <p class="block">
+  A badge to show the project status on other websites.
+  </p>
+  <p class="block">
+  <a href="{{ .Permalink }}">
+  <img src="{{ .Permalink }}index.svg">
+  </a>
+  </p>
+
+  <details>
+    <summary>Embedding instructions</summary>
+    <br />
+
+    <p class="block">
+    As HTML:
+    <br />
+    <code>
+      &lt;a href="{{ .Permalink }}"&gt;&lt;img src="{{ .Permalink }}index.svg"&gt;&lt;/a&gt;
+    </code>
+    </p>
+    <p class="block">
+    As Markdown:
+    <br />
+    <code>
+      [![Always Open]({{ .Permalink }}index.svg)]({{ .Permalink }})
+    </code>
+    </p>
+  </details>
+</section>

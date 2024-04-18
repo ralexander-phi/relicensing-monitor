@@ -9,15 +9,15 @@ These agreements are important to ensure contributions carry the correct licensi
 
 ## Developer Certificate of Origin
 
-A [Developer Certificate of Origin](https://developercertificate.org/) (DCO) is a low risk way for developers to license their contributions under the project's existing license, or a compatible license.
+A [Developer Certificate of Origin](https://developercertificate.org/) (DCO) is a lightweight way for developers to license their contributions under the project's existing license or a compatible license.
 
 The DCO does not contain any patent or copyright grants.
-As such, the trademark owner of the project does not gain any special rights beyond the rights specified by the software licence(s).
+As such, the trademark owner of the project does not gain any special rights beyond the rights specified by the software license(s).
 
 
 ## Contributor License Agreement
 
-A Contributor License Agreement (CLA) is an agreement which contributors are required to sign before they may contribute to a software project.
+A Contributor License Agreement (CLA) is an agreement that contributors are required to sign before they may contribute to a software project.
 
 A CLA is not inherently a problem, but some agreements require copyright grants and patent grants.
 Centralization of rights to the project owner simplifies the license change process as contributors have delegated their rights.
