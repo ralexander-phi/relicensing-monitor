@@ -1,6 +1,7 @@
 ---
 title: Terraform
 summary: Automate infrastructure as code
+date: 2024-04-20
 rugpulled: true
 
 website: https://www.terraform.io/

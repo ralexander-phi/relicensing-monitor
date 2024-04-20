@@ -1,6 +1,7 @@
 ---
 title: OpenSearch
 summary: A search engine
+date: 2024-04-20
 rugpulled: false
 
 website: https://opensearch.org

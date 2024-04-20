@@ -17,6 +17,18 @@
       "licenseId": "__CLOSED_SOURCE",
       "isOsiApproved": false,
       "reference": "https://en.wikipedia.org/wiki/Closed_source_software"
+    },
+    {
+      "name": "Functional Source License, Version 1.1, Apache 2.0 Future License",
+      "licenseId": "__FSL-1.1-Apache-2.0",
+      "isOsiApproved": false,
+      "reference": "https://fsl.software/"
+    },
+    {
+      "name": "CockroachDB Community License",
+      "licenseId": "__CCL",
+      "isOsiApproved": false,
+      "reference": "https://www.cockroachlabs.com/docs/stable/licensing-faqs#types-of-licenses"
     }
   ]
 }

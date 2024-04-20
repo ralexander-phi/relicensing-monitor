@@ -1,6 +1,7 @@
 ---
 title: Elasticsearch
 summary: A search engine
+date: 2024-04-20
 rugpulled: true
 
 website: https://www.elastic.co/products/elasticsearch
@@ -8,8 +9,6 @@ code: https://github.com/elastic/elasticsearch
 
 license:
     spdx:
-      # TODO: Technically Apache covers some parts too (SPDX AND expression)
-      #- Apache-2.0
       - SSPL-1.0
       - __ELASTIC-2.0
     ref: https://github.com/elastic/elasticsearch/blob/main/LICENSE.txt
@@ -30,6 +29,5 @@ forks:
   - name: OpenSearch
     ref: /project/opensearch/
     type: opensource
-
 ---
 On 14 January 2021, Elasticsearch [changed](https://www.elastic.co/blog/licensing-change) from the Apache 2.0 License to the Server Side Public License and the Elastic License (both non-open source).

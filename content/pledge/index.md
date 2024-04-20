@@ -1,5 +1,6 @@
 ---
 title: Our open source pledge
+date: 2024-04-20
 ---
 
 # Taking the Always Open Pledge

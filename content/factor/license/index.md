@@ -1,6 +1,7 @@
 ---
 title: Licenses
 summary: How licensing impacts open source
+date: 2024-04-20
 ---
 
 # Licenses

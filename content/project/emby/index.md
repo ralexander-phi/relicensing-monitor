@@ -1,6 +1,7 @@
 ---
 title: Emby
 summary: Personal media server
+date: 2024-04-20
 rugpulled: true
 
 website: https://emby.media/

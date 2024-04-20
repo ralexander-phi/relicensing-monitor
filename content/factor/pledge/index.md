@@ -1,6 +1,7 @@
 ---
 title: Pledge
 summary: An open source promise
+date: 2024-04-20
 ---
 # Open Source Pledge
 

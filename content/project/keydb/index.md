@@ -1,6 +1,7 @@
 ---
 title: KeyDB
 summary: An in-memory data store
+date: 2024-04-20
 rugpulled: false
 
 website: https://keydb.dev/

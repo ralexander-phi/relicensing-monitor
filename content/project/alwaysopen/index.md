@@ -1,6 +1,7 @@
 ---
 title: Always Open
 summary: Tracking open source projects (this website)
+date: 2024-04-20
 rugpulled: false
 
 website: https://robalexdev.codeberg.page/alwaysopen/

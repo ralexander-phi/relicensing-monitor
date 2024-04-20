@@ -1,6 +1,7 @@
 ---
 title: OpenTofu
 summary: Automate infrastructure as code
+date: 2024-04-20
 rugpulled: false
 
 website: https://opentofu.org/

@@ -1,6 +1,7 @@
 ---
 title: Jellyfin
 summary: Personal media server
+date: 2024-04-20
 rugpulled: false
 
 website: https://jellyfin.org

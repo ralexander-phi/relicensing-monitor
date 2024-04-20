@@ -1,6 +1,7 @@
 ---
 title: Redis
 summary: An in-memory data store
+date: 2024-04-20
 rugpulled: true
 
 website: https://redis.io/

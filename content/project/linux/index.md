@@ -1,6 +1,7 @@
 ---
 title: Linux kernel
 summary: An operating system kernel
+date: 2024-04-20
 rugpulled: false
 
 website: https://www.linux.org/

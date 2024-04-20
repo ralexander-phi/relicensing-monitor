@@ -10,6 +10,7 @@ outputs:
   page:
     - html
     - svg
+    - rss
 
 outputFormats:
   html:
