@@ -16,8 +16,10 @@
 </p>
 
 <p class="block">
+  {{- if .ctx.Params.agreements.ref -}}
   <a href="{{ .ctx.Params.agreements.ref}}">Reference</a>
   &#124;
+  {{- end -}}
   <a href="/factor/agreements/">Learn more</a>
 </p>
 </section>
