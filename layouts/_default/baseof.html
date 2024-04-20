@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     {{- partial "head" . -}}
+    {{- block "extrahead" . -}}
+    {{- end -}}
   </head>
   <body>
   {{- partial "nav" . -}}
