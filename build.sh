@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 git checkout main
+
+if [[ -n $(git status --porcelain) ]]; then
+	echo 'Working directory is not clean'
+	git status --short
+	exit 1
+fi
+
 rm -Rf public/
 hugo --gc --minify --baseURL https://`head -n 1 .domains`
 cp .domains public/

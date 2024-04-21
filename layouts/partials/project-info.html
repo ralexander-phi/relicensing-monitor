@@ -1,12 +1,21 @@
-<h1 class="title is-1 mb-2">
+<h1 class="title is-1 mb-0">
   {{ .Title }}
 </h1>
 
-<div class="tags">
+<div class="tags mb-4 mt-3">
   <a class="tag is-info" href="{{ .Params.website }}">Website</a>
   <a class="tag is-info" href="{{ .Params.code }}">Source Code</a>
 </div>
 
-<p class="block mb-6 is-size-5">
-{{ .Params.summary }}
+<p class="block mt-0 mb-6">
+  {{- if .Params.org -}}
+    <span class="is-size-6 is-italic">
+      From {{ .Params.org}}
+    </span>
+  {{- end -}}
+  <br />
+  <span class="is-size-5">
+    {{ .Params.summary }}
+  </span>
 </p>
+

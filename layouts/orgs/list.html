@@ -1,0 +1,59 @@
+{{- define "extrahead" -}}
+<meta name="description" content="Always Open: Open source relicensing risks by organizations">
+{{- end -}}
+
+{{ define "main" }}
+<section class="section">
+  <main>
+    <article class="is-size-5">
+      <section class="section hero is-small">
+        <div class="hero-body">
+          <h1 class="title is-3">{{ .Title }}</h1>
+
+          <section class="section pl-0 mb-4">
+            <h2 class="title is-5 mb-3 mb-2">Risk Guide</h2>
+            <div class="tag is-success is-hoverable mb-2 mr-2 is-medium">Low Risk</div>
+            <div class="tag is-info is-hoverable mb-2 mr-2 is-medium">Medium Risk</div>
+            <div class="tag is-warning is-hoverable mb-2 mr-2 is-medium">High Risk</div>
+            <div class="tag is-danger is-hoverable mb-2 mr-2 is-medium">No Longer Open Source</div>
+          </section>
+
+
+{{- $details := slice -}}
+{{- $orgs := slice -}}
+{{- range (where .Site.Pages "Section" "projects") -}}
+  {{- if .Params.org -}}
+    {{- $orgs = $orgs | append .Params.org -}}
+  {{- end -}}
+{{- end -}}
+{{- $orgs = sort (uniq $orgs) -}}
+
+{{- $riskColors := dict
+      "Low" "is-success"
+      "Medium" "is-info"
+      "High" "is-warning"
+-}}
+
+{{- range $orgs -}}
+  {{- $org := . -}}
+  <div class="pt-6 pb-6">
+  <h2 class="subtitle is-4 mb-3">{{ $org }}</h2>
+  {{- range (where $.Site.Pages "Section" "projects") -}}
+    {{- if eq .Params.org $org -}}
+      {{- $ctx := partial "result" . -}}
+      {{- $color := index $riskColors $ctx.risk -}}
+      {{- if .Params.rugpulled -}}
+        {{- $color = "is-danger" -}}
+      {{- end -}}
+      <a href="{{ .Permalink }}" class="tag {{ $color }} is-hoverable mb-2 mr-2 is-medium">{{ .Params.title }}</a>
+    {{- end -}}
+  {{- end -}}
+  </div>
+{{- end -}}
+
+        </div>
+      </section>
+    </article>
+  </main>
+</section>
+{{- end -}}

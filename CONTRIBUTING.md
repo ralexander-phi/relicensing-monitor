@@ -15,6 +15,11 @@ Most commits will add a new project to the site.
 
 `rugpulled`: Set to true if the project was previously open source but is no longer. We'll use the OSI approved license list to determine if a license is open source. If it's not on the list, consider it to be non-open. This doesn't mean the license is commercial or closed.
 
+`org`: The organization that manages the project or holds the project trademark.
+If the project uses a CLA, this is usually the organization that is granted additional rights.
+When a prominent parent organization exists, use the parent organization (I.E., Amazon.com over Amazon Web Services).
+For private / personal projects, skip this.
+
 `website`: The URL of the main marketing page of the project (or source code, if none exists)
 
 `code`: The URL of the source code (often a GitHub link)

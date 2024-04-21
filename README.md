@@ -1,6 +1,6 @@
 # Always Open
 
-[![Always Open](https://always-open.alexsci.com/project/alwaysopen/index.svg)](https://always-open.alexsci.com/project/alwaysopen/)
+[![Always Open](https://always-open.alexsci.com/projects/alwaysopen/index.svg)](https://always-open.alexsci.com/projects/alwaysopen/)
 
 This project tracks various attributes of open source projects to surface risks that they could switch to a non-open source license.
 

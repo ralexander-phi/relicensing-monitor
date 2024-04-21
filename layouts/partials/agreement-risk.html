@@ -18,6 +18,11 @@
   {{- $description = "Contribution requirements do not appear to be formally specified." -}}
   {{- $risk = "Medium" -}}
   {{- $show = true -}}
+{{- else if eq "Explicit" .Params.agreements.type -}}
+  {{- $tag = "is-success" -}}
+  {{- $description = "Contributors agree to license their contribution under the project's license, but are not required to grant futher rights." -}}
+  {{- $risk = "Low" -}}
+  {{- $show = true -}}
 {{- else if eq "Apache2.0-Only" .Params.agreements.type -}}
   {{- $tag = "is-success" -}}
   {{- $description = "Apache license terms apply to contributions (per Apache 2.0 §5). No additional rights are granted." -}}
