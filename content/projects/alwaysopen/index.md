@@ -17,6 +17,8 @@ agreements:
     type: DCO
     ref: https://codeberg.org/robalexdev/alwaysopen/src/branch/main/CONTRIBUTING.md#dco-sign-off
 
+tm:
+
 pledge:
     known: true
     ref: /pledge/

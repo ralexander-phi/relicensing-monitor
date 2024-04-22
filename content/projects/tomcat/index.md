@@ -1,9 +1,8 @@
 ---
-title: Apache Tomcat
+title: Tomcat
 summary: A web server
 date: 2024-04-20
 rugpulled: false
-org: Apache Software Foundation
 
 website: http://tomcat.apache.org/
 code: https://github.com/apache/tomcat
@@ -16,6 +15,12 @@ license:
 agreements:
     type: Apache2.0-Only
     ref: https://github.com/apache/tomcat/blob/main/CONTRIBUTING.md
+
+tm:
+    mark: Tomcat
+    status: Registered
+    owner: The Apache Software Foundation
+    ref: https://tsdr.uspto.gov/#caseNumber=86567762&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

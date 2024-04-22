@@ -3,7 +3,6 @@ title: Caddy
 summary: A web server
 date: 2024-04-20
 rugpulled: false
-org: ZeroSSL GmbH
 
 website: https://caddyserver.com/
 code: https://github.com/caddyserver/caddy
@@ -16,6 +15,9 @@ license:
 agreements:
     type: Apache2.0-Only
     ref:
+
+# May be ZeroSSL, non-US?
+tm:
 
 pledge:
     known: false

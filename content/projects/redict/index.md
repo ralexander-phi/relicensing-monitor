@@ -16,6 +16,8 @@ agreements:
     type: DCO
     ref: https://codeberg.org/redict/redict/src/branch/main/CONTRIBUTING.md
 
+tm:
+
 pledge:
     known: false
 ---

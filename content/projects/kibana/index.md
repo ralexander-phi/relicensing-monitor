@@ -3,7 +3,6 @@ title: Kibana
 summary: Data visualization
 date: 2024-04-20
 rugpulled: true
-org: Elasticsearch B.V.
 
 website: https://www.elastic.co/kibana
 code: https://github.com/elastic/kibana
@@ -21,6 +20,12 @@ agreements:
     grants:
       copyright: true
       patent: true
+
+tm:
+    mark: Kibana
+    status: Registered
+    owner: Elasticsearch BV
+    ref: https://tsdr.uspto.gov/#caseNumber=86035258&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: true

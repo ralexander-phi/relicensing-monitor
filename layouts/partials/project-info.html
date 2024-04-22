@@ -8,10 +8,14 @@
 </div>
 
 <p class="block mt-0 mb-6">
-  {{- if .Params.org -}}
-    <span class="is-size-6 is-italic">
-      From {{ .Params.org}}
-    </span>
+  {{- if .Params.tm.owner -}}
+  <span class="is-size-6 is-italic">
+      {{ .Params.tm.mark }} is a
+      <a href="{{ .Params.tm.ref }}">
+        {{ .Params.tm.status | lower }} trademark
+      </a>
+      of {{ .Params.tm.owner }}
+  </span>
   {{- end -}}
   <br />
   <span class="is-size-5">

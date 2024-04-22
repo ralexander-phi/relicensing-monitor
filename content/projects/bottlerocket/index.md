@@ -3,7 +3,6 @@ title: Bottlerocket
 summary: Operating system for hosting containers
 date: 2024-04-21
 rugpulled: false
-org: Amazon.com, Inc.
 
 website: https://bottlerocket.dev/
 code: https://github.com/bottlerocket-os/bottlerocket
@@ -17,6 +16,12 @@ license:
 agreements:
     type: Explicit
     ref: https://github.com/bottlerocket-os/bottlerocket/blob/develop/COPYRIGHT
+
+tm:
+    mark: Bottlerocket
+    status: Registered
+    owner: Amazon Technologies, Inc.
+    ref: https://tsdr.uspto.gov/#caseNumber=88838220&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

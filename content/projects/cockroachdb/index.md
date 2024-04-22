@@ -3,7 +3,6 @@ title: CockroachDB
 summary: Distributed SQL database
 date: 2024-04-20
 rugpulled: true
-org: Cockroach Labs, Inc.
 
 website: https://www.cockroachlabs.com/
 code: https://github.com/cockroachdb/cockroach
@@ -21,6 +20,12 @@ agreements:
     grants:
       copyright: true
       patent: true
+
+tm:
+    mark: CockroachDB
+    status: Registered
+    owner: Cockroach Labs, Inc.
+    ref: https://tsdr.uspto.gov/#caseNumber=86899467&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

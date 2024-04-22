@@ -15,11 +15,6 @@ Most commits will add a new project to the site.
 
 `rugpulled`: Set to true if the project was previously open source but is no longer. We'll use the OSI approved license list to determine if a license is open source. If it's not on the list, consider it to be non-open. This doesn't mean the license is commercial or closed.
 
-`org`: The organization that manages the project or holds the project trademark.
-If the project uses a CLA, this is usually the organization that is granted additional rights.
-When a prominent parent organization exists, use the parent organization (I.E., Amazon.com over Amazon Web Services).
-For private / personal projects, skip this.
-
 `website`: The URL of the main marketing page of the project (or source code, if none exists)
 
 `code`: The URL of the source code (often a GitHub link)
@@ -41,6 +36,21 @@ Check if your license if Copyleft, if so, add the license to the viral list as w
 * `DCO`: If the project uses the [Developer Certificate of Origin](https://developercertificate.org/) without any further requirements.
 
 `grantee`: If grants are provided, who the rights are granted to
+
+### `tm`
+
+Determine if a relevant trademark has been registered in the United States.
+Use [USPTO](https://tmsearch.uspto.gov/search/search-information) to search.
+Try adding "software" as the "goods and services" field if you see too many results.
+
+`mark`: The relevant mark, which may only cover part of the project name.
+
+`status`: Only include trademarks that are "Registered" or "Pending", not "Cancelled", or "Abandoned".
+
+`owner`: The "Owner Name" field of the registration.
+
+`ref`: The URL to the trademark status page.
+
 
 #### `grants`
 

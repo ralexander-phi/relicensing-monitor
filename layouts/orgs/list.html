@@ -1,5 +1,5 @@
 {{- define "extrahead" -}}
-<meta name="description" content="Always Open: Open source relicensing risks by organizations">
+<meta name="description" content="Always Open: Open source projects by trademark owner">
 {{- end -}}
 
 {{ define "main" }}
@@ -10,23 +10,22 @@
         <div class="hero-body">
           <h1 class="title is-3">{{ .Title }}</h1>
 
-          <section class="section pl-0 mb-4">
+          <div class="notification is-info is-dark mb-4">
             <h2 class="title is-5 mb-3 mb-2">Risk Guide</h2>
             <div class="tag is-success is-hoverable mb-2 mr-2 is-medium">Low Risk</div>
             <div class="tag is-info is-hoverable mb-2 mr-2 is-medium">Medium Risk</div>
             <div class="tag is-warning is-hoverable mb-2 mr-2 is-medium">High Risk</div>
             <div class="tag is-danger is-hoverable mb-2 mr-2 is-medium">No Longer Open Source</div>
-          </section>
-
+          </div>
 
 {{- $details := slice -}}
-{{- $orgs := slice -}}
+{{- $owners := slice -}}
 {{- range (where .Site.Pages "Section" "projects") -}}
-  {{- if .Params.org -}}
-    {{- $orgs = $orgs | append .Params.org -}}
+  {{- if .Params.tm.owner -}}
+    {{- $owners = $owners | append .Params.tm.owner -}}
   {{- end -}}
 {{- end -}}
-{{- $orgs = sort (uniq $orgs) -}}
+{{- $owners = sort (uniq $owners) -}}
 
 {{- $riskColors := dict
       "Low" "is-success"
@@ -34,12 +33,12 @@
       "High" "is-warning"
 -}}
 
-{{- range $orgs -}}
-  {{- $org := . -}}
-  <div class="pt-6 pb-6">
-  <h2 class="subtitle is-4 mb-3">{{ $org }}</h2>
+{{- range $owners -}}
+  {{- $owner := . -}}
+  <div class="notification is-info is-light mb-4">
+  <h2 class="subtitle is-4 mb-3">{{ $owner }}</h2>
   {{- range (where $.Site.Pages "Section" "projects") -}}
-    {{- if eq .Params.org $org -}}
+    {{- if eq .Params.tm.owner $owner -}}
       {{- $ctx := partial "result" . -}}
       {{- $color := index $riskColors $ctx.risk -}}
       {{- if .Params.rugpulled -}}

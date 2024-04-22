@@ -3,7 +3,6 @@ title: Redis
 summary: An in-memory data store
 date: 2024-04-20
 rugpulled: true
-org: Redis, Inc.
 
 website: https://redis.io/
 code: https://github.com/redis/redis
@@ -22,6 +21,12 @@ agreements:
     grants:
        copyright: true
        patent: true
+
+tm:
+    mark: Redis
+    status: Registered
+    owner: Redis LTD
+    ref: https://tsdr.uspto.gov/#caseNumber=87805452&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

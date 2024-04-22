@@ -3,7 +3,6 @@ title: Elasticsearch
 summary: A search engine
 date: 2024-04-20
 rugpulled: true
-org: Elasticsearch B.V.
 
 website: https://www.elastic.co/products/elasticsearch
 code: https://github.com/elastic/elasticsearch
@@ -21,6 +20,12 @@ agreements:
     grants:
       copyright: true
       patent: true
+
+tm:
+    mark: Elasticsearch
+    search: Registered
+    owner: Elasticsearch BV
+    ref: https://tsdr.uspto.gov/#caseNumber=79112495&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: true

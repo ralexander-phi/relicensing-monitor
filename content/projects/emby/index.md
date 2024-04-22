@@ -3,7 +3,6 @@ title: Emby
 summary: Personal media server
 date: 2024-04-20
 rugpulled: true
-org: Emby LLC
 
 website: https://emby.media/
 code: https://github.com/MediaBrowser/Emby
@@ -17,6 +16,12 @@ license:
 agreements:
     type:
     ref:
+
+tm:
+    mark: Emby
+    status: Registered
+    owner: Emby, LLC
+    ref: https://tsdr.uspto.gov/#caseNumber=88236647&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

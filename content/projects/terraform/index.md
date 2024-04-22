@@ -3,7 +3,6 @@ title: Terraform
 summary: Automate infrastructure as code
 date: 2024-04-20
 rugpulled: true
-org: HashiCorp, Inc.
 
 website: https://www.terraform.io/
 code: https://github.com/hashicorp/terraform
@@ -21,6 +20,12 @@ agreements:
     grants:
       copyright: true
       patent: true
+
+tm:
+    mark: Terraform
+    status: Registered
+    owner: HashiCorp, Inc.
+    ref: https://tsdr.uspto.gov/#caseNumber=88470183&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

@@ -3,7 +3,6 @@ title: Kubernetes
 summary: Orchestrate containerized applications
 date: 2024-04-20
 rugpulled: false
-org: Cloud Native Computing Foundation
 
 website: https://kubernetes.io/
 code: https://github.com/kubernetes/kubernetes
@@ -20,6 +19,12 @@ agreements:
     grants:
       copyright: true
       patent: true
+
+tm:
+    mark: Kubernetes
+    status: Registered
+    owner: The Linux Foundation
+    ref: https://tsdr.uspto.gov/#caseNumber=86400668&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

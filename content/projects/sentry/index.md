@@ -3,7 +3,6 @@ title: Sentry
 summary: Application monitoring
 date: 2024-04-20
 rugpulled: true
-org: Functional Software, Inc.
 
 website: https://sentry.io
 code: https://github.com/getsentry/sentry
@@ -16,6 +15,12 @@ license:
 agreements:
     type: Informal
     ref: https://develop.sentry.dev/
+
+tm:
+    mark: Sentry
+    status: Registered
+    owner: Functional Software, Inc.
+    ref: https://tsdr.uspto.gov/#caseNumber=90312168&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false

@@ -3,7 +3,6 @@ title: TensorFlow
 summary: Machine learning platform
 date: 2024-04-21
 rugpulled: false
-org: Google Inc.
 
 website: https://www.tensorflow.org/
 code: https://www.tensorflow.org/
@@ -20,6 +19,12 @@ agreements:
     grants:
       copyright: true
       patent: true
+
+tm:
+    mark: TensorFlow
+    status: Registered
+    owner: Google LLC
+    ref: https://tsdr.uspto.gov/#caseNumber=86778464&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:
     known: false
