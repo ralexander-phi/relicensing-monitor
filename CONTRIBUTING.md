@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in Always Open.
+Thanks for your interest in the Relicensing Monitor
 
 
 ## Adding Projects

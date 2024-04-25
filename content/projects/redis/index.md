@@ -33,13 +33,13 @@ pledge:
 
 forks:
   - name: Redict
-    ref: /project/redict/
+    ref: /projects/redict/
     type: copyleft
   - name: KeyDB
-    ref: /project/keydb/
+    ref: /projects/keydb/
     type: opensource
   - name: ValKey
-    ref: /project/valkey/
+    ref: /projects/valkey/
     type: opensource
 ---
 On 20 March 2024, Redis [changed](https://redis.com/blog/redis-adopts-dual-source-available-licensing/) from the open source BSD License to dual-licensed under the Redis Source Available License and Server Side Public License (both non-open source).

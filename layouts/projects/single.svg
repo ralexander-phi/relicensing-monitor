@@ -21,7 +21,7 @@
   {{- $finding = "High Risk" -}}
 {{- end -}}
 
-{{- $project := "Always Open" -}}
+{{- $project := "Relicensing Risk" -}}
 {{- $title := "{{ $project }}: {{ $finding }}" -}}
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="20" role="img" aria-label="{{ $title }}">

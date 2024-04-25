@@ -1,6 +1,6 @@
-# Always Open
+# Relicensing Monitor
 
-[![Always Open](https://alexsci.com/relicencing-monitor/projects/alwaysopen/index.svg)](https://alexsci.com/relicencing-monitor/projects/alwaysopen/)
+[![Relicensing Monitor](https://alexsci.com/relicensing-monitor/projects/relicensing-monitor/index.svg)](https://alexsci.com/relicensing-monitor/projects/relicensing-monitor/)
 
 This project tracks various attributes of open source projects to surface risks that they could switch to a non-open source license.
 

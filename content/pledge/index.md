@@ -5,7 +5,7 @@ date: 2024-04-20
 
 # Taking the Always Open Pledge
 
-The Always Open project hereby pledges to release all future versions of Always Open under an Open Source Initiative approved Open Source license.
+The Relicensing Monitor project hereby pledges to release all future versions of Relicensing Monitor under an Open Source Initiative approved Open Source license.
 
 [Learn more](/factor/pledge/)
 

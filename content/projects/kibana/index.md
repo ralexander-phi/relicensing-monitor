@@ -33,7 +33,7 @@ pledge:
 
 forks:
   - name: OpenSearch
-    ref: /project/opensearch/
+    ref: /projects/opensearch/
     type: opensource
 ---
 On 14 January 2021, Kibana [changed](https://www.elastic.co/blog/licensing-change) from the Apache 2.0 License to the Server Side Public License and the Elastic License (both non-open source).

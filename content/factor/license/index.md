@@ -34,10 +34,10 @@ Copyleft-licensed projects can still have their license changed if, for example,
 
 *Examples: Server Side Public License, Commercial Licenses*
 
-Always Open follows the [Open Source Initiative](https://opensource.org/licenses) (OSI) approved license list to determine if a license if open source.
+Relicensing Monitor follows the [Open Source Initiative](https://opensource.org/licenses) (OSI) approved license list to determine if a license if open source.
 Non-open source licenses may still grant users and developers broad rights, but they may contain terms that OSI does not consider to meet their definition of open source.
 Several "open" licenses may be considered "fauxpen", or pretending to be open.
-Always Open takes a conservative approach by labeling these as "non-open" and encourages readers to learn more about each license.
+Relicensing Monitor takes a conservative approach by labeling these as "non-open" and encourages readers to learn more about each license.
 
 
 ## Creative Commons Licenses
