@@ -10,8 +10,8 @@
 {{- else if in $risks "High" -}}
   {{- $overallRisk = "High" -}}
   {{- $tag = "is-danger" -}}
-{{- else if in $risks "Medium" -}}
-  {{- $overallRisk = "Medium" -}}
+{{- else if in $risks "Mild" -}}
+  {{- $overallRisk = "Mild" -}}
   {{- $tag = "is-info" -}}
 {{- else -}}
   {{- $overallRisk = "Low" -}}

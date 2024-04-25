@@ -29,12 +29,12 @@
 
       {{- range slice
             (dict "level" "High" "color" "is-warning")
-            (dict "level" "Medium" "color" "is-info")
+            (dict "level" "Mild" "color" "is-info")
             (dict "level" "Low" "color" "is-success")
       -}}
         <article class="message {{ .color }} mb-6">
           <div class="message-header">
-            <p>{{ .level }} risk projects</p>
+            <p>Projects with {{ .level | lower }} relicensing risk</p>
           </div>
           <div class="message-body">
             {{- range where (where $details "ctx.Params.rugpulled" "ne" true) "risk" .level -}}

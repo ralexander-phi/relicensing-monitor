@@ -11,12 +11,12 @@
 {{- else if eq "Informal" .Params.agreements.type -}}
   {{- $tag = "is-info" -}}
   {{- $description = "Contributors make only informal agreements when contributing code, but are not required to grant further rights." -}}
-  {{- $risk = "Medium" -}}
+  {{- $risk = "Mild" -}}
   {{- $show = true -}}
 {{- else if eq "Unclear" .Params.agreements.type -}}
   {{- $tag = "is-info" -}}
   {{- $description = "Contribution requirements do not appear to be formally specified." -}}
-  {{- $risk = "Medium" -}}
+  {{- $risk = "Mild" -}}
   {{- $show = true -}}
 {{- else if eq "Explicit" .Params.agreements.type -}}
   {{- $tag = "is-success" -}}
@@ -31,16 +31,16 @@
 {{- else if eq "CLA" .Params.agreements.type -}}
   {{- $tag = "is-info" -}}
   {{- $description = "Contributors are required to sign a license agreement." -}}
-  {{- $risk = "Medium" -}}
+  {{- $risk = "Mild" -}}
 
   {{- if .Params.agreements.grants.copyright -}}
-    {{- $tag = "is-danger" -}}
+    {{- $tag = "is-warning" -}}
     {{- $risk = "High" -}}
     {{- $grants = append "a copyright grant" $grants -}}
   {{- end -}}
 
   {{- if .Params.agreements.grants.patent -}}
-    {{- $tag = "is-danger" -}}
+    {{- $tag = "is-warning" -}}
     {{- $risk = "High" -}}
     {{- $grants = append "a patent grant" $grants -}}
   {{- end -}}

@@ -1,20 +1,21 @@
 {{- define "main" -}}
-{{- $highColor := "#e05d44" -}}
-{{- $mediumColor := "#007ec6" -}}
-{{- $lowColor := "#4c1" -}}
+{{- $rugPullColor := "#ff6685" -}}
+{{- $highColor := "#ffb70f" -}}
+{{- $mildColor := "#66d1ff" -}}
+{{- $lowColor := "#48c78e" -}}
 
 {{- $ctx := partial "result" . -}}
 
 {{- $color := "" -}}
 {{- $finding := "" -}}
 {{- if .Params.rugpulled -}}
-  {{- $color = $highColor -}}
+  {{- $color = $rugPullColor -}}
   {{- $finding = "Not Open" -}}
 {{- else if eq $ctx.overall.risk "Low" -}}
   {{- $color = $lowColor -}}
   {{- $finding = "Low Risk" -}}
-{{- else if eq $ctx.overall.risk "Medium" -}}
-  {{- $color = $mediumColor -}}
+{{- else if eq $ctx.overall.risk "Mild" -}}
+  {{- $color = $mildColor -}}
   {{- $finding = "Mild Risk" -}}
 {{- else -}}
   {{- $color = $highColor -}}
