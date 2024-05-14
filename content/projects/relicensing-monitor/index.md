@@ -11,11 +11,11 @@ license:
     spdx:
       - MIT
       - CC-BY-4.0
-    ref: https://github.com/ralexander-phi/relicensing-monitor/raw/main/README.md
+    ref: https://github.com/ralexander-phi/relicensing-monitor/blob/main/README.md
 
 agreements:
     type: DCO
-    ref: https://github.com/ralexander-phi/relicensing-monitor/raw/main/CONTRIBUTING.md
+    ref: https://github.com/ralexander-phi/relicensing-monitor/blob/main/CONTRIBUTING.md#dco-sign-off
 
 tm:
 
