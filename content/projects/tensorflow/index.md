@@ -5,7 +5,7 @@ date: 2024-04-21
 rugpulled: false
 
 website: https://www.tensorflow.org/
-code: https://www.tensorflow.org/
+code: https://github.com/tensorflow
 
 license:
     spdx:
