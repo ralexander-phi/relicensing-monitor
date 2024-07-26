@@ -51,9 +51,29 @@
   {{- $show = true -}}
 {{- end -}}
 
+{{ $orgId := .Params.tm.owner }}
+{{ $orgLink := "" }}
+{{ $nonprofitDowngrade := false }}
+{{ if $orgId }}
+  {{- range (where $.Site.Pages "Section" "orgs") -}}
+  {{- if eq .Title $orgId -}}
+    <!-- Lower agreement risk for nonprofits with an open source related mission -->
+    {{ if and (.Params.openSourceMission) (eq $risk "High") }}
+      {{ $nonprofitDowngrade = true }}
+      {{ $tag = "is-info" }}
+      {{ $risk = "Mild" }}
+    {{ end }}
+    {{ $orgLink = .RelPermalink }}
+  {{ end }}
+  {{ end }}
+{{ end }}
+
 {{- return dict
   "show"        $show
   "description" $description
   "tag"         $tag
   "risk"        $risk
+  "org"         $orgId
+  "orgLink"     $orgLink
+  "nonprofitDowngrade" $nonprofitDowngrade
 -}}

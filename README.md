@@ -1,7 +1,5 @@
 # Relicensing Monitor
 
-[![Relicensing Monitor](https://alexsci.com/relicensing-monitor/projects/relicensing-monitor/index.svg)](https://alexsci.com/relicensing-monitor/projects/relicensing-monitor/)
-
 This project tracks various attributes of open source projects to surface risks that they could switch to a non-open source license.
 
 An open source software "rug-pull" occurs when a project changes it's license to something non-open source. This is often done so that the project trademark owner can monetize the project. Developer communities that provided their work to the project are often upset when this happens and may stop collaborating with the project. License changes do not apply retroactively to previous releases, so developers may consider forking the project under a new name and with an open source license.

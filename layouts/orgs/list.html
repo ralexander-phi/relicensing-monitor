@@ -35,8 +35,20 @@
 
 {{- range $owners -}}
   {{- $owner := . -}}
-  <div class="notification is-info is-light mb-4">
-  <h2 class="subtitle is-4 mb-3">{{ $owner }}</h2>
+
+  {{ $foundOwner := false }}
+  {{- range (where $.Site.Pages "Section" "orgs") -}}
+  {{- if eq .Title $owner -}}
+    {{ $foundOwner = true }}
+    <a href="{{ .RelPermalink }}">
+    <div class="notification mb-4">
+    <h2 class="subtitle is-4 mb-3">{{ .Title }}</h2>
+  {{- end -}}
+  {{- end -}}
+  {{ if not $foundOwner }}
+    {{ errorf "Organization not found" }}
+  {{ end }}
+
   {{- range (where $.Site.Pages "Section" "projects") -}}
     {{- if eq .Params.tm.owner $owner -}}
       {{- $ctx := partial "result" . -}}
@@ -44,10 +56,11 @@
       {{- if .Params.rugpulled -}}
         {{- $color = "is-danger" -}}
       {{- end -}}
-      <a href="{{ .Permalink }}" class="tag {{ $color }} is-hoverable mb-2 mr-2 is-medium">{{ .Params.title }}</a>
+      <span class="tag {{ $color }} is-hoverable mb-2 mr-2 is-medium">{{ .Params.title }}</span>
     {{- end -}}
   {{- end -}}
   </div>
+  </a>
 {{- end -}}
 
         </div>

@@ -8,13 +8,21 @@
 </div>
 
 <p class="block mt-0 mb-6">
-  {{- if .Params.tm.owner -}}
+  {{ $owner := .Params.tm.owner }}
+  {{- if $owner -}}
   <span class="is-size-6 is-italic">
       {{ .Params.tm.mark }} is a
       <a href="{{ .Params.tm.ref }}">
         {{ .Params.tm.status | lower }} trademark
       </a>
-      of {{ .Params.tm.owner }}
+      of 
+      {{- range (where $.Site.Pages "Section" "orgs") -}}
+      {{- if eq .Title $owner -}}
+        <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+        </a>
+      {{- end -}}
+      {{- end -}}
   </span>
   {{- end -}}
   <br />

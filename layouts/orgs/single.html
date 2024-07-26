@@ -1,0 +1,72 @@
+{{- define "extrahead" -}}
+<meta name="description" content="Relicensing Monitor: {{ .Title }}">
+{{- end -}}
+
+{{ define "main" }}
+<section class="section">
+  <main>
+    <article class="is-size-5">
+      <section class="section hero is-small">
+        <div class="hero-body">
+          <h1 class="title is-3">{{ .Title }}</h1>
+
+
+<div class="tags">
+  <span class="tag is-hoverable is-medium">
+  {{- if eq .Params.type "ForProfit" -}}
+    For Profit
+  {{- else if eq .Params.type "Person" -}}
+    Individual
+  {{- else if eq .Params.type "NonProfit" -}}
+    Nonprofit
+  {{- else -}}
+    {{ errorf "Unknown org type" }}
+  {{- end -}}
+  </span >
+
+  {{ if .Params.taxId }}
+  <a class="tag is-hoverable is-medium" href="{{ .Params.filing }}">
+    Tax ID: {{ .Params.taxId }}
+  </a>
+  {{ end }}
+</div>
+
+{{ if .Params.mission }}
+<div class="notification">
+<div class="subtitle is-4 mb-3">Mission Statement</div>
+{{ .Params.mission }}
+</div>
+{{ end }}
+
+<h2 class="title is-3 mt-6">Projects</h2>
+
+{{- $riskColors := dict
+      "Low" "is-success"
+      "Mild" "is-info"
+      "High" "is-warning"
+-}}
+
+{{ $orgId := .Title }}
+
+{{- range (where $.Site.Pages "Section" "projects") -}}
+  {{- if eq .Params.tm.owner $orgId -}}
+    {{- $ctx := partial "result" . -}}
+    {{- $color := index $riskColors $ctx.risk -}}
+    {{- if .Params.rugpulled -}}
+      {{- $color = "is-danger" -}}
+    {{- end -}}
+<a href="{{ .RelPermalink }}">
+<div class="notification {{ $color }} mb-5">
+<h3 class="subtitle is-4 mb-3">{{ .Params.title }}</h3>
+{{ .Params.summary }}
+</div>
+</a>
+  {{- end -}}
+{{- end -}}
+
+        </div>
+      </section>
+    </article>
+  </main>
+</section>
+{{- end -}}
