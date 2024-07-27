@@ -17,7 +17,7 @@ license:
 agreements:
     type: CLA
     ref: https://github.com/redis/redis/blob/unstable/CONTRIBUTING.md
-    grantee: Redis Ltd.
+    grantee: Redis LTD
     grants:
        copyright: true
        patent: true

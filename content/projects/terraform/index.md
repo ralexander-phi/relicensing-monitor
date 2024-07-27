@@ -16,7 +16,7 @@ license:
 agreements:
     type: CLA
     ref: https://github.com/hashicorp/terraform/blob/main/.github/CONTRIBUTING.md
-    grantee: HashiCorp
+    grantee: HashiCorp, Inc
     grants:
       copyright: true
       patent: true
@@ -24,7 +24,7 @@ agreements:
 tm:
     mark: Terraform
     status: Registered
-    owner: HashiCorp, Inc.
+    owner: HashiCorp, Inc
     ref: https://tsdr.uspto.gov/#caseNumber=88470183&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:

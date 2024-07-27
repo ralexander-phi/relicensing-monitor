@@ -49,7 +49,7 @@
 {{ $orgId := .Title }}
 
 {{- range (where $.Site.Pages "Section" "projects") -}}
-  {{- if eq .Params.tm.owner $orgId -}}
+  {{- if or (eq .Params.tm.owner $orgId) (eq .Params.agreements.grantee $orgId) -}}
     {{- $ctx := partial "result" . -}}
     {{- $color := index $riskColors $ctx.risk -}}
     {{- if .Params.rugpulled -}}
@@ -63,6 +63,8 @@
 </a>
   {{- end -}}
 {{- end -}}
+
+{{ partialCached "risk-guide" "" }}
 
         </div>
       </section>

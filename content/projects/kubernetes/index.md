@@ -15,7 +15,7 @@ license:
 agreements:
     type: CLA
     ref: https://github.com/kubernetes/kubernetes/blob/master/CONTRIBUTING.md
-    grantee: Cloud Native Computing Foundation
+    grantee: The Linux Foundation # CNCF
     grants:
       copyright: true
       patent: true

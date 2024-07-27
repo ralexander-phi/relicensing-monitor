@@ -24,7 +24,7 @@ agreements:
 tm:
     mark: CockroachDB
     status: Registered
-    owner: Cockroach Labs, Inc.
+    owner: Cockroach Labs, Inc
     ref: https://tsdr.uspto.gov/#caseNumber=86899467&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
 pledge:

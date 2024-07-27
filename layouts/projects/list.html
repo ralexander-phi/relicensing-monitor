@@ -11,22 +11,6 @@
     <article>
       <h1 class="title is-3 mb-6">{{ .Title }}</h1>
 
-      <article class="message is-danger mb-6">
-        <div class="message-header">
-          <p>No longer open source</p>
-        </div>
-        <div class="message-body">
-          {{- range where $details "ctx.Params.rugpulled" "eq" true -}}
-            <p class="block">
-              <a href="{{ .ctx.RelPermalink }}" class="is-size-5">{{ .ctx.Title }}</a>
-              <span class="is-size-6">
-                - {{ .ctx.Params.summary }}
-              </span>
-            </p>
-          {{- end -}}
-        </div>
-      </article>
-
       {{- range slice
             (dict "level" "High" "color" "is-warning")
             (dict "level" "Mild" "color" "is-info")
@@ -48,6 +32,23 @@
           </div>
         </article>
       {{- end -}}
+
+      <article class="message is-danger mb-6">
+        <div class="message-header">
+          <p>No longer open source</p>
+        </div>
+        <div class="message-body">
+          {{- range where $details "ctx.Params.rugpulled" "eq" true -}}
+            <p class="block">
+              <a href="{{ .ctx.RelPermalink }}" class="is-size-5">{{ .ctx.Title }}</a>
+              <span class="is-size-6">
+                - {{ .ctx.Params.summary }}
+              </span>
+            </p>
+          {{- end -}}
+        </div>
+      </article>
+
     </article>
   </main>
 </section>

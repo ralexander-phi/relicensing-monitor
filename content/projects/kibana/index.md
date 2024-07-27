@@ -16,7 +16,7 @@ license:
 agreements:
     type: CLA
     ref: https://www.elastic.co/guide/en/kibana/master/contributing.html#signing-contributor-agreement
-    grantee: Elasticsearch
+    grantee: Elasticsearch BV
     grants:
       copyright: true
       patent: true

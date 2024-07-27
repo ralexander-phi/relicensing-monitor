@@ -15,7 +15,7 @@ license:
 agreements:
     type: CLA
     ref: https://github.com/tensorflow/tensorflow/blob/master/CONTRIBUTING.md
-    grantee: Google
+    grantee: Google LLC
     grants:
       copyright: true
       patent: true

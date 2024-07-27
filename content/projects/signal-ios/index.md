@@ -15,7 +15,7 @@ license:
 agreements:
     type: CLA
     ref: https://github.com/signalapp/Signal-iOS/blob/main/CONTRIBUTING.md
-    grantee: Signal Messenger
+    grantee: Signal Technology Foundation
     grants:
       copyright: true
       patent: true

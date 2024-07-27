@@ -15,7 +15,7 @@ license:
 agreements:
     type: CLA
     ref: https://github.com/signalapp/libsignal/blob/main/README.md#contributions
-    grantee: Signal Messenger
+    grantee: Signal Technology Foundation
     grants:
       copyright: true
       patent: true

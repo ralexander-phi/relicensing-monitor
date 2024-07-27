@@ -16,7 +16,7 @@ license:
 agreements:
     type: CLA
     ref: https://github.com/elastic/elasticsearch/blob/main/CONTRIBUTING.md
-    grantee: Elasticsearch
+    grantee: Elasticsearch BV
     grants:
       copyright: true
       patent: true
