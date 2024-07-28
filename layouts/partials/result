@@ -5,11 +5,11 @@
 {{- $overallRisk := "" -}}
 {{- $tag := "" -}}
 {{- if .Params.rugpulled -}}
-  {{- $overallRisk = "High" -}}
+  {{- $overallRisk = "No Longer Open Source" -}}
   {{- $tag = "is-danger" -}}
 {{- else if in $risks "High" -}}
   {{- $overallRisk = "High" -}}
-  {{- $tag = "is-danger" -}}
+  {{- $tag = "is-warning" -}}
 {{- else if in $risks "Mild" -}}
   {{- $overallRisk = "Mild" -}}
   {{- $tag = "is-info" -}}

@@ -1,0 +1,20 @@
+<section class="section is-small pl-0">
+
+{{- if .ctx.Params.rugpulled -}}
+<div class="notification is-danger has-text-centered mb-6">
+  <div class="is-size-4 has-text-weight-bold">
+    {{ .ctx.Title }} is no longer open source.
+  </div>
+</div>
+{{ else }}
+<h2 class="title is-3 mb-1">Risk Assessment</h2>
+<div class="field is-grouped is-grouped-multiline mb-5 mt-3">
+  <span class="tag {{ .overall.tag}} is-large">{{ .overall.risk }} Risk</span>
+</div>
+
+The overall risk assessment uses the highest score from the categories listed below.
+
+{{- end -}}
+
+
+</section>

@@ -6,13 +6,12 @@
 
 <section class="section">
   {{- partial "project-info" . -}}
-  {{- partial "rugpull" . -}}
-  {{- $ctx := partial "result" . -}}
 
+  {{- $ctx := partial "result" . -}}
+  {{- partial "summary" $ctx -}}
   {{- partial "license" $ctx -}}
   {{- partial "cla"     $ctx -}}
   {{- partial "notes"   .    -}}
-  {{- partial "badge"   .    -}}
 </section>
 
 {{- end -}}
