@@ -14,11 +14,11 @@
 <div class="tags">
   {{ $orgTypeTag := "" }}
   {{- if eq .Params.type "ForProfit" -}}
-  {{ $orgTypeTag = "For Profit" }}
+  {{ $orgTypeTag = "For Profit Organization" }}
   {{- else if eq .Params.type "Person" -}}
   {{ $orgTypeTag = "Individual" }}
   {{- else if eq .Params.type "NonProfit" -}}
-  {{ $orgTypeTag = "Nonprofit" }}
+  {{ $orgTypeTag = "Nonprofit Organization" }}
   {{- else if eq .Params.type "Unknown" -}}
   {{- else -}}
     {{ errorf "Unknown org type %s" .Params.type }}
@@ -27,7 +27,15 @@
   {{ if $orgTypeTag }}
   <span class="tag is-hoverable is-medium">
     {{ $orgTypeTag }}
-  </span >
+  </span>
+  {{ end }}
+
+  {{ if .Params.link }}
+  <a href="{{ .Params.link }}" class="tag is-hoverable is-medium">
+    Website
+  </a>
+  {{ else }}
+    {{ errorf "No link for %s" .Title }}
   {{ end }}
 
   {{ if .Params.taxId }}
