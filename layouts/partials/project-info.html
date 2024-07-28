@@ -24,8 +24,11 @@
       {{- end -}}
       {{- end -}}
   </span>
-  {{- else if .Params.org.name -}}
+  {{- else if or .Params.org.name .Params.agreements.grantee -}}
     {{ $owner = .Params.org.name }}
+    {{ if not $owner }}
+    {{ $owner = .Params.agreements.grantee }}
+    {{ end }}
     A project by
     {{ $displayAs := .Params.org.displayAs }}
     {{- range (where $.Site.Pages "Section" "orgs") -}}
