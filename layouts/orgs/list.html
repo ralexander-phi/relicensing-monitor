@@ -21,8 +21,8 @@
   {{- if .Params.agreements.grantee -}}
     {{- $owners = $owners | append .Params.agreements.grantee -}}
   {{- end -}}
-  {{- if .Params.org -}}
-    {{- $owners = $owners | append .Params.org -}}
+  {{- if .Params.org.name -}}
+    {{- $owners = $owners | append .Params.org.name -}}
   {{- end -}}
 {{- end -}}
 {{- $owners = sort (uniq $owners) -}}
@@ -50,7 +50,7 @@
   {{ end }}
 
   {{- range (where $.Site.Pages "Section" "projects") -}}
-    {{- if or (eq .Params.tm.owner $owner) (eq .Params.agreements.grantee $owner) (eq .Params.org $owner) -}}
+    {{- if or (eq .Params.tm.owner $owner) (eq .Params.agreements.grantee $owner) (eq .Params.org.name $owner) -}}
       {{- $ctx := partial "result" . -}}
       {{- $color := index $riskColors $ctx.risk -}}
       {{- if .Params.rugpulled -}}

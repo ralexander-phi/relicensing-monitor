@@ -5,7 +5,8 @@ date: 2024-04-20
 rugpulled: false
 
 # Doesn't appear trademarked
-org: ZeroSSL
+org:
+  name: ZeroSSL
 
 website: https://caddyserver.com/
 code: https://github.com/caddyserver/caddy

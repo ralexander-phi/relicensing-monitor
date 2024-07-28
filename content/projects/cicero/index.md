@@ -3,7 +3,9 @@ title: CICERO
 summary: Detect driver gene fusions from RNA-seq
 date: 2024-07-27
 rugpulled: true
-org: St. Jude Children's Research Hospital
+
+org:
+  name: St. Jude Children's Research Hospital
 
 website: https://stjude.github.io/CICERO/
 code: https://github.com/stjude/CICERO

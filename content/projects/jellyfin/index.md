@@ -4,7 +4,8 @@ summary: Personal media server
 date: 2024-04-20
 rugpulled: false
 
-org: "jellyfin.org"
+org:
+  name: jellyfin.org
 
 website: https://jellyfin.org
 code: https://github.com/jellyfin/jellyfin

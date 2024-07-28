@@ -4,7 +4,8 @@ summary: Building and maintaining project websites
 date: 2024-07-26
 rugpulled: false
 
-org: Meta Platforms, Inc
+org:
+  name: Meta Platforms, Inc
 
 website: https://docusaurus.io/
 code: https://github.com/facebook/docusaurus

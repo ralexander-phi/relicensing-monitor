@@ -3,7 +3,9 @@ title: RNAIndel
 summary: Somatic indel discovery tool for tumor RNA-Seq data
 date: 2024-07-27
 rugpulled: false
-org: St. Jude Children's Research Hospital
+
+org:
+  name: St. Jude Children's Research Hospital
 
 website: https://stjude.github.io/RNAIndel/
 code: https://github.com/stjude/RNAIndel

@@ -24,13 +24,18 @@
       {{- end -}}
       {{- end -}}
   </span>
-  {{- else if .Params.org -}}
-    {{ $owner = .Params.org }}
+  {{- else if .Params.org.name -}}
+    {{ $owner = .Params.org.name }}
     A project by
+    {{ $displayAs := .Params.org.displayAs }}
     {{- range (where $.Site.Pages "Section" "orgs") -}}
     {{- if eq .Title $owner -}}
       <a href="{{ .RelPermalink }}">
+      {{- if $displayAs }}
+      {{ $displayAs }}
+      {{ else }}
       {{ .Title }}
+      {{ end }}
       </a>
     {{- end -}}
     {{- end -}}

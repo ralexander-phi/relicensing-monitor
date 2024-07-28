@@ -3,7 +3,8 @@ title: SEAseq
 summary: ChIP-Seq/CUT&RUN data analysis
 date: 2024-07-27
 rugpulled: false
-org: St. Jude Children's Research Hospital
+org:
+  name: St. Jude Children's Research Hospital
 
 website: https://github.com/stjude/seaseq
 code: https://github.com/stjude/seaseq

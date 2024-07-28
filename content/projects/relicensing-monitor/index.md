@@ -4,7 +4,9 @@ summary: Tracking software relicensing
 date: 2024-04-20
 rugpulled: false
 
-org: "Robert Alexander"
+org:
+  name: Robert Alexander
+  displayAs: Robert Alexander and others
 
 website: https://alexsci.com/relicensing-monitor/
 code: https://github.com/ralexander-phi/relicensing-monitor

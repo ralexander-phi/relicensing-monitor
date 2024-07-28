@@ -55,7 +55,7 @@
 {{ $orgId := .Title }}
 
 {{- range (where $.Site.Pages "Section" "projects") -}}
-  {{- if or (eq .Params.tm.owner $orgId) (eq .Params.agreements.grantee $orgId) (eq .Params.org $orgId) -}}
+  {{- if or (eq .Params.tm.owner $orgId) (eq .Params.agreements.grantee $orgId) (eq .Params.org.name $orgId) -}}
     {{- $ctx := partial "result" . -}}
     {{- $color := index $riskColors $ctx.risk -}}
     {{- if .Params.rugpulled -}}
