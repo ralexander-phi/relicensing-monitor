@@ -13,7 +13,7 @@ license:
     ref: https://github.com/swiftlang/swift/blob/main/LICENSE.txt
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://github.com/swiftlang/swift/blob/main/LICENSE.txt
 
 tm:

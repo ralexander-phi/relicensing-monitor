@@ -13,7 +13,7 @@ license:
     ref: https://github.com/apache/spark/blob/master/LICENSE
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://spark.apache.org/contributing.html
 
 tm:

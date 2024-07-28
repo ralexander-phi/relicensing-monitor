@@ -12,6 +12,10 @@ license:
         - GPL-2.0
     ref: https://core.trac.wordpress.org/browser/trunk/src/license.txt
 
+agreements:
+    type: GPL-2.0
+    ref: https://core.trac.wordpress.org/browser/trunk/src/license.txt
+
 tm:
     mark: WordPress
     status: Registered

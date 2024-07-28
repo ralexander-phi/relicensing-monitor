@@ -13,7 +13,7 @@ license:
     ref: https://github.com/apache/tomcat/blob/main/LICENSE
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://github.com/apache/tomcat/blob/main/CONTRIBUTING.md
 
 tm:

@@ -16,6 +16,6 @@ license:
     ref: https://github.com/jellyfin/jellyfin?tab=GPL-2.0-1-ov-file
 
 agreements:
-    type: Unclear
-    ref: https://github.com/jellyfin/jellyfin
+    type: GPL-2.0
+    ref: https://github.com/jellyfin/jellyfin?tab=GPL-2.0-1-ov-file
 ---

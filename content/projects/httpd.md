@@ -13,7 +13,7 @@ license:
     ref: https://svn.apache.org/viewvc/httpd/httpd/trunk/LICENSE?view=markup
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://httpd.apache.org/dev/patches.html
 
 tm:

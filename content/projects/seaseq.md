@@ -15,6 +15,6 @@ license:
     ref: https://github.com/stjude/seaseq/blob/master/LICENSE
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://github.com/stjude/seaseq/blob/master/LICENSE
 ---

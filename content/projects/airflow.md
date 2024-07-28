@@ -13,7 +13,7 @@ license:
     ref: https://github.com/apache/airflow/blob/main/LICENSE
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://github.com/apache/airflow/blob/main/contributing-docs/README.rst
 
 tm:

@@ -17,6 +17,6 @@ license:
     ref: https://github.com/caddyserver/caddy/blob/master/LICENSE
 
 agreements:
-    type: Apache2.0-Only
-    ref:
+    type: Apache2.0
+    ref: https://github.com/caddyserver/caddy/blob/master/LICENSE
 ---

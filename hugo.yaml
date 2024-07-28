@@ -9,11 +9,8 @@ params:
 outputs:
   page:
     - html
-    - svg
     - rss
 
 outputFormats:
   html:
     mediaType: text/html
-  svg:
-    mediaType: image/svg+xml

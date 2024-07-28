@@ -13,7 +13,7 @@ license:
     ref: https://github.com/apache/couchdb/blob/main/LICENSE
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://github.com/apache/couchdb/blob/main/CONTRIBUTING.md
 
 tm:

@@ -12,6 +12,10 @@ license:
         - MPL-2.0
     ref: https://en.wikipedia.org/wiki/Firefox#Licensing
 
+agreements:
+    type: MPL-2.0
+    ref: https://en.wikipedia.org/wiki/Firefox#Licensing
+
 tm:
     mark: Firefox
     status: Registered

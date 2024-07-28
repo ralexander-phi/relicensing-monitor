@@ -13,7 +13,7 @@ license:
     ref: https://github.com/apache/zookeeper/blob/master/LICENSE.txt
 
 agreements:
-    type: Apache2.0-Only
+    type: Apache2.0
     ref: https://cwiki.apache.org/confluence/display/ZOOKEEPER/HowToContribute
 
 tm:
