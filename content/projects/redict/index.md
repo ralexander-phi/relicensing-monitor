@@ -4,6 +4,8 @@ summary: An in-memory data store
 date: 2024-04-20
 rugpulled: false
 
+org: Drew DeVault
+
 website: https://redict.io/
 code: https://codeberg.org/redict/redict
 

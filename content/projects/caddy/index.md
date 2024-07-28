@@ -4,6 +4,9 @@ summary: A web server
 date: 2024-04-20
 rugpulled: false
 
+# Doesn't appear trademarked
+org: ZeroSSL
+
 website: https://caddyserver.com/
 code: https://github.com/caddyserver/caddy
 
@@ -15,10 +18,4 @@ license:
 agreements:
     type: Apache2.0-Only
     ref:
-
-# May be ZeroSSL, non-US?
-tm:
-
-pledge:
-    known: false
 ---

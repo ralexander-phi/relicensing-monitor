@@ -29,6 +29,12 @@
       "licenseId": "__CCL",
       "isOsiApproved": false,
       "reference": "https://www.cockroachlabs.com/docs/stable/licensing-faqs#types-of-licenses"
+    },
+    {
+      "name": "St. Jude Modified Apache License",
+      "licenseId": "__StJudeModifiedApache2",
+      "isOsiApproved": false,
+      "reference": "https://github.com/stjude/CICERO/blob/master/LICENSE"
     }
   ]
 }

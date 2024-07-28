@@ -12,17 +12,23 @@
 
 
 <div class="tags">
-  <span class="tag is-hoverable is-medium">
+  {{ $orgTypeTag := "" }}
   {{- if eq .Params.type "ForProfit" -}}
-    For Profit
+  {{ $orgTypeTag = "For Profit" }}
   {{- else if eq .Params.type "Person" -}}
-    Individual
+  {{ $orgTypeTag = "Individual" }}
   {{- else if eq .Params.type "NonProfit" -}}
-    Nonprofit
+  {{ $orgTypeTag = "Nonprofit" }}
+  {{- else if eq .Params.type "Unknown" -}}
   {{- else -}}
-    {{ errorf "Unknown org type" }}
+    {{ errorf "Unknown org type %s" .Params.type }}
   {{- end -}}
+
+  {{ if $orgTypeTag }}
+  <span class="tag is-hoverable is-medium">
+    {{ $orgTypeTag }}
   </span >
+  {{ end }}
 
   {{ if .Params.taxId }}
   <a class="tag is-hoverable is-medium" href="{{ .Params.filing }}">
@@ -49,7 +55,7 @@
 {{ $orgId := .Title }}
 
 {{- range (where $.Site.Pages "Section" "projects") -}}
-  {{- if or (eq .Params.tm.owner $orgId) (eq .Params.agreements.grantee $orgId) -}}
+  {{- if or (eq .Params.tm.owner $orgId) (eq .Params.agreements.grantee $orgId) (eq .Params.org $orgId) -}}
     {{- $ctx := partial "result" . -}}
     {{- $color := index $riskColors $ctx.risk -}}
     {{- if .Params.rugpulled -}}

@@ -24,6 +24,18 @@
       {{- end -}}
       {{- end -}}
   </span>
+  {{- else if .Params.org -}}
+    {{ $owner = .Params.org }}
+    A project by
+    {{- range (where $.Site.Pages "Section" "orgs") -}}
+    {{- if eq .Title $owner -}}
+      <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+      </a>
+    {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{ errorf "%s should specify a trademark owner or project owner" .Title }}
   {{- end -}}
   <br />
   <span class="is-size-5">
