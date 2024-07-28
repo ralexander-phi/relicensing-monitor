@@ -1,43 +1,35 @@
 {{- $tag := "" -}}
 {{- $description := "" -}}
 {{- $risk := "" -}}
-{{- $show := false -}}
 {{- $grants := slice -}}
 {{- if eq "DCO" .Params.agreements.type -}}
   {{- $tag = "is-success" -}}
   {{- $description = "Contributors sign a developer certificate of origin, but are not required to grant futher rights." -}}
   {{- $risk = "Low" -}}
-  {{- $show = true -}}
 {{- else if eq "Informal" .Params.agreements.type -}}
   {{- $tag = "is-info" -}}
   {{- $description = "Contributors make only informal agreements when contributing code, but are not required to grant further rights." -}}
   {{- $risk = "Mild" -}}
-  {{- $show = true -}}
 {{- else if eq "Unclear" .Params.agreements.type -}}
   {{- $tag = "is-info" -}}
   {{- $description = "Contribution requirements do not appear to be formally specified." -}}
   {{- $risk = "Mild" -}}
-  {{- $show = true -}}
 {{- else if eq "Explicit" .Params.agreements.type -}}
   {{- $tag = "is-success" -}}
   {{- $description = "Contributors agree to license their contribution under the project's license, but are not required to grant futher rights." -}}
   {{- $risk = "Low" -}}
-  {{- $show = true -}}
 {{- else if eq "Apache2.0" .Params.agreements.type -}}
   {{- $tag = "is-success" -}}
   {{- $description = "Apache license terms apply to contributions (per Apache 2.0 §5). No additional rights are granted." -}}
   {{- $risk = "Low" -}}
-  {{- $show = true -}}
 {{- else if eq "MPL-2.0" .Params.agreements.type -}}
   {{- $tag = "is-success" -}}
   {{- $description = "Mozilla Public License terms apply to contributions (per §2)." -}}
   {{- $risk = "Low" -}}
-  {{- $show = true -}}
 {{- else if eq "GPL-2.0" .Params.agreements.type -}}
   {{- $tag = "is-success" -}}
   {{- $description = "GNU General Public License terms apply to contributions (per §2)." -}}
   {{- $risk = "Low" -}}
-  {{- $show = true -}}
 {{- else if eq "CLA" .Params.agreements.type -}}
   {{- $tag = "is-info" -}}
   {{- $description = "Contributors are required to sign a license agreement." -}}
@@ -58,14 +50,10 @@
   {{- if $grants -}}
     {{- $description = (print "Contributors are required to sign a license agreement which grants " .Params.agreements.grantee " " (delimit $grants ", " " and ") ".") -}}
   {{- end -}}
-  {{- $show = true -}}
 {{ else if .Params.rugpulled }}
   {{ $description = "moot" }}
-  {{- $show = true -}}
-{{- end -}}
-
-{{ if not $show }}
-{{ errorf "Unable to determine agreement risk for %s" .Title }}
+{{ else }}
+  {{ errorf "Unable to determine agreement risk for %s" .Title }}
 {{ end }}
 
 {{ $orgId := .Params.tm.owner }}
