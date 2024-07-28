@@ -26,3 +26,5 @@ tm:
     owner: NVIDIA Corporation
     ref: https://tsdr.uspto.gov/#caseNumber=75445382&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 ---
+On 19 May 2022, NVIDIA [released](https://developer.nvidia.com/blog/nvidia-releases-open-source-gpu-kernel-modules/) the source code for their Linux GPU kernel modules under the MIT license.
+This software was previously closed source.
