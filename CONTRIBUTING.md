@@ -58,11 +58,6 @@ Try adding "software" as the "goods and services" field if you see too many resu
 
 `patent`: `true` if a patent grant is required
 
-### `pledge`
-
-`known`: `true` if the project has made a pledge to keep the project open source. Only consider official pledges by a company, not pledges by a single developer on their personal blog (as they may not reasonably have the ability to make the pledge).
-
-`ref`: The URL of the pledge (if any)
 
 ### `forks`
 

@@ -25,7 +25,4 @@ tm:
     status: Registered
     owner: Google LLC
     ref: https://tsdr.uspto.gov/#caseNumber=86778464&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

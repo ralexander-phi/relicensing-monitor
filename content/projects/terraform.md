@@ -27,9 +27,6 @@ tm:
     owner: HashiCorp, Inc
     ref: https://tsdr.uspto.gov/#caseNumber=88470183&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
-pledge:
-    known: false
-
 forks:
   - name: OpenTofu
     ref: /projects/opentofu/

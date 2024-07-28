@@ -21,7 +21,4 @@ tm:
     status: Pending
     owner: Amazon Technologies, Inc.
     ref: https://tsdr.uspto.gov/#caseNumber=97033628&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

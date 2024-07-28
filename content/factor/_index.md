@@ -1,3 +1,3 @@
 ---
-title: Risk Factors
+title: Rating Criteria
 ---

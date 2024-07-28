@@ -27,9 +27,6 @@ tm:
     owner: Cockroach Labs, Inc
     ref: https://tsdr.uspto.gov/#caseNumber=86899467&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
-pledge:
-    known: false
-
 forks:
 ---
 In 2019, CockroachDB [changed](https://www.cockroachlabs.com/blog/oss-relicensing-cockroachdb/) from the open source Apache license to the Business Source License 1.1 (not open source).

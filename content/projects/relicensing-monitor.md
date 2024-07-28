@@ -20,10 +20,4 @@ license:
 agreements:
     type: DCO
     ref: https://github.com/ralexander-phi/relicensing-monitor/blob/main/CONTRIBUTING.md#dco-sign-off
-
-tm:
-
-pledge:
-    known: true
-    ref: /pledge/
 ---

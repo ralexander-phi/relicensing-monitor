@@ -27,10 +27,6 @@ tm:
     owner: Elasticsearch BV
     ref: https://tsdr.uspto.gov/#caseNumber=79112495&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
-pledge:
-    known: true
-    ref: https://web.archive.org/web/20190731225507/https://www.elastic.co/what-is/open-x-pack
-
 forks:
   - name: OpenSearch
     ref: /projects/opensearch/

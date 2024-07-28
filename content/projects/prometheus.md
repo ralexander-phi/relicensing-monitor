@@ -21,7 +21,4 @@ tm:
     status: Registered
     owner: The Linux Foundation
     ref: https://tsdr.uspto.gov/#caseNumber=87193244&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

@@ -21,7 +21,4 @@ tm:
     status: Registered
     owner: Amazon Technologies, Inc.
     ref: https://tsdr.uspto.gov/#caseNumber=88730939&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

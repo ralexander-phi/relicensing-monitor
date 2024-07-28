@@ -21,7 +21,4 @@ tm:
     status: Pending
     owner: LF Projects, LLC
     ref: https://tsdr.uspto.gov/#caseNumber=98182348&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

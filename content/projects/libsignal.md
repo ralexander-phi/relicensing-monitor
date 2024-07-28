@@ -25,7 +25,4 @@ tm:
     status: Registered
     owner: Signal Technology Foundation
     ref: https://tsdr.uspto.gov/#caseNumber=87038808&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

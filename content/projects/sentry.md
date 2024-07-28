@@ -22,9 +22,6 @@ tm:
     owner: Functional Software, Inc.
     ref: https://tsdr.uspto.gov/#caseNumber=90312168&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
-pledge:
-    known: false
-
 forks:
 ---
 On 6 November 2019, Sentry [changed](https://blog.sentry.io/relicensing-sentry/) from the BSD 3-Clause license to the Business Source License (not open source).

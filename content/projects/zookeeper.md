@@ -21,7 +21,4 @@ tm:
     status: Registered
     owner: The Apache Software Foundation
     ref: https://tsdr.uspto.gov/#caseNumber=87925939&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

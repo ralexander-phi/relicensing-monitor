@@ -1,3 +1,3 @@
 ---
-title: Relicensing risks by trademark owner
+title: Relicensing risks by organization
 ---

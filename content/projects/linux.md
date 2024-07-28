@@ -21,7 +21,4 @@ tm:
     status: Registered
     owner: Linus Torvalds
     ref: https://tsdr.uspto.gov/#caseNumber=74560867&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---

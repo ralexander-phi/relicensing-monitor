@@ -28,9 +28,6 @@ tm:
     owner: Redis LTD
     ref: https://tsdr.uspto.gov/#caseNumber=87805452&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 
-pledge:
-    known: false
-
 forks:
   - name: Redict
     ref: /projects/redict/
