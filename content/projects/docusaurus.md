@@ -22,7 +22,4 @@ agreements:
     grants:
       copyright: true
       patent: true
-
-pledge:
-    known: false
 ---

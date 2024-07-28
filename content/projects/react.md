@@ -25,7 +25,4 @@ tm:
     status: Registered
     owner: Meta Platforms, Inc
     ref: https://tsdr.uspto.gov/#caseNumber=88915234&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-
-pledge:
-    known: false
 ---
