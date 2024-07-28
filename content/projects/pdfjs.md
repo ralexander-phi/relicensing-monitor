@@ -4,6 +4,9 @@ summary: PDF viewer built with HTML5.
 date: 2024-07-28
 rugpulled: false
 
+org:
+    name: Mozilla Foundation
+
 website: https://mozilla.github.io/pdf.js/
 code: https://github.com/mozilla/pdf.js
 
